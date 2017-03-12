@@ -1,0 +1,21 @@
+// image
+@mixin img($url, $scale: 1) {
+  $w: calc(width($url) * $scale);
+  $h: calc(height($url) * $scale);
+  width: $w;
+  height: $h;
+  background-image: resolve($url);
+  background-size: $w $h;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@mixin inline-img($url, $scale: 1) {
+  $w: calc(width($url) * $scale);
+  $h: calc(height($url) * $scale);
+  width: $w;
+  height: $h;
+  background-image: inline($url);
+  background-size: $w $h;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
