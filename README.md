@@ -4,31 +4,35 @@
 
 ### 1. Clone this repository
 
-```
-cd wordpress/wp-content/themes/
-git clone https://github.com/nyawach/wp-theme-template.git <theme-name>
+```bash
+$ cd wordpress/wp-content/themes/
 ```
 
-### 2. Setup for gulp
+```bash
+$ git clone https://github.com/nyawach/wp-theme-template.git <theme-name>
+```
+
+### 2. Setup
 
 Change current directory to `_develop/`,
 
-```
-cd _develop/
+```bash
+$ cd _develop/
 ```
 
 and install npm packages
 
-```
-yarn
-# npm i
+```bash
+$ yarn
+# or $ npm i
 ```
 
 ### 3. Run gulp through npm script
 
-```
-yarn start
-# npm start
+```bash
+# wordpress/wp-content/themes/_develop
+$ yarn start
+# or $ npm start
 ```
 
 ## Dependencies
